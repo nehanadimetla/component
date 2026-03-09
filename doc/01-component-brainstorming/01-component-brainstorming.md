@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Neha Nadimetla
+- **Dot Number**: Nadimetla.1
+- **Due Date**: 02/06 @ 3:10 PM EST
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+My interests include things such as fashion, calligraphy, and journaling. I consider myself to be very creative but I also like to find new ways to be productive. I participate in using planners and keeping my notes for classes organized in a manner where I can easily find everything.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -142,8 +126,6 @@ list-like components that have different ways of manipulating the data. Think
 about different ways you might allow a client to manipulate your component.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +193,108 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Flashcard Deck
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is to model a deck of flashcards used for studying. Each flashcard will have a term with a corresponding defintion. The kernel will focus on simple operations for adding and removing cards. The secondary methods will work on functions such as shuffling, editing cards, etc.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - void addCardToEnd(String front, String back): adds a new flashcard with the given front and back text to the end of this deck
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+void removeCurrentCard(): removes the current flashcard from this deck and updates the current position
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+void moveToNextCard(): advances the current position to the next card in this deck
+
+void moveToPreviousCard(): moves the current position to the previous card in this deck
+
+void flipCurrentCard(): flips the current flashcard between showing its front and its back
+
+boolean isEmpty(): reports whether this deck has no cards
+
+- **Secondary Methods**:
+  - void resetToFirstCard(): makes the first card in this deck the current card
+
+String currentFront(): reports the front text of the current card
+
+String currentBack(): reports the back text of the current card
+
+void editCurrentFront(String newFront): changes the front text of the current card to newFront
+
+- **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+  - Would this component be mutable? Answer and explain:
+      -Yes, cards will be editable
+  - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
+    - I don't know, but I'm considering something like that to match term and defin tion
+
+      component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
+    - I don't know
+  - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - Yes, secondary methods will mostly be based on kernel methods.
+
+- Component Design #2: MusicPlaylist
+  - **Description**:
+  - The purpose of this component is to model a music playlist as an ordered collection of songs with a current song pointer. Each song will have descriptions of a title, artist, etc. Kernel focuses on operations like adding, removing songs.
+  - **Kernel Methods**:
+    - void addSongToEnd(String title, String artist): appends a new song with the given title and artist to the end of this playlist
+
+void removeCurrentSong(): removes the current song from this playlist and adjusts the current position
+
+void moveToNextSong(): advances the current position to the next song
+
+- **Secondary Methods**:
+  - void resetToFirstSong(): makes the first song in this playlist the current song
+
+String currentTitle(): reports the title of the current song
+
+String currentArtist(): reports the artist of the current song
+
+void moveCurrentToFront(): moves the current song to the front of this playlist while preserving the relative order of the other songs
+
+- **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+  - Would this component be mutable? Answer and explain:
+    - Yes, current songs can be switched and times can be edited.
+  - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+    - Potentially, in order to match title and artist together.
+  - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+    - I don't know
+  - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      -Yes, secondary methods can be implemented from kernel methods, as an example, shuffling songs can be implemted using the add and remove songs.
+
+- Component Design #3: ToDoList
+  - **Description**:
+    - The purpose of this component is to model a simple to-do list as an ordered collection of tasks, where each task has a description and a completion status. The kernel methods will focus on adding and removing tasks.
+  - **Kernel Methods**:
+    - void addTaskToEnd(String description): appends a new not-completed task with the given description to the end of this list
+
+- void removeTaskAt(int position): removes the task at the given zero-based position in this list
+
+- void toggleCompleted(int position): changes the completion status of the task at the given position
+  - **Secondary Methods**:
+    - boolean isCompleted(int position): reports whether the task at the given position is completed
+
+int indexOf(String description): reports the smallest index of a task whose description matches the given description
+
+void moveTask(int fromPosition, int toPosition): moves the task from one position to another
+
+- **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+  - Would this component be mutable? Answer and explain:
+    - Yes, as tasks can be editable and moved
+  - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      -I don't know, but potentially in order to match item and description
+  - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+    - I don't know
+  - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+    - Yes, secondary methods will be implemented using the kernel methods. For example, to move an item, the remove and add methods can be utilized.
 
 ## Post-Assignment
 
