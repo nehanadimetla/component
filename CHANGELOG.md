@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## [2026.02.25]
+
+### Added
+
+- Designed a proof of concept for FlashcardDeck component
+
+### Updated
+
+- Changed design to include multiple methods on top of OSU Sequence concepts
+
+## [2026.02.06]
+
+### Added
+
+- Created ideas for FlashcardDeck component
+- Created ideas for ToDoList component
+- Created ideas for MusicPlaylist component
+
 ## [Unreleased]
 
 - Disabled an aspect of the coderunner extension
