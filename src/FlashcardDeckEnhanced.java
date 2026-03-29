@@ -1,7 +1,7 @@
 /**
  * Enhanced interface for a flashcard deck component.
  */
-public interface FlashcardDeckEnhanced extends FlashcardDeckKernel {
+public interface FlashcardDeck extends FlashcardDeckKernel {
     /**
      * Resets the current position to the first card in this deck.
      *
