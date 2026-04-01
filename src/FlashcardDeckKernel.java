@@ -61,6 +61,16 @@ public interface FlashcardDeckKernel {
     /**
      * Returns the back text of the current card in this deck.
      *
+     * @return the back text of the current card
+     * @requires this deck is not empty
+     * @ensures the returned string is the back text of the current card in this
+     *          deck.
+     */
+    String currentBack();
+
+    /**
+     * Returns the back text of the current card in this deck.
+     *
      * @return the number of cards in this deck.
      * @ensures the returned string is the back text of the current card in this
      *          deck.
