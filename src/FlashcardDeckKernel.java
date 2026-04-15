@@ -76,4 +76,28 @@ public interface FlashcardDeckKernel {
      *          deck.
      */
     int size();
+
+    /**
+     * Returns a new empty instance of this component.
+     *
+     * @return a new empty FlashcardDeckEnhanced
+     */
+    FlashcardDeckEnhanced newInstance();
+
+    /**
+     * Resets this component to an empty state.
+     *
+     * @clears this
+     */
+    void clear();
+
+    /**
+     * Transfers the content of {@code source} into this, leaving source empty.
+     *
+     * @param source
+     *            the component to transfer from
+     * @updates this
+     * @clears source
+     */
+    void transferFrom(FlashcardDeckEnhanced source);
 }

@@ -10,7 +10,7 @@ public class FlashcardDeck {
     /**
      * Represents a single flashcard with a front (term) and back (definition).
      */
-    private static class Card {
+    public static class Card {
         /**
          * The front (term) of this card.
          */
@@ -63,6 +63,7 @@ public class FlashcardDeck {
      * @param back
      *            the back (definition) text of new card
      */
+
     public void addCardToEnd(String front, String back) {
         this.deck.add(this.deck.length(), new Card(front, back));
     }
@@ -71,6 +72,7 @@ public class FlashcardDeck {
      * Removes the current card from this deck and adjusts the current position
      * if necessary.
      */
+
     public void removeCurrentCard() {
         if (this.deck.length() > 0) {
             this.deck.remove(this.currentIndex);
@@ -85,6 +87,7 @@ public class FlashcardDeck {
      * Advances the current position to the next in this deck, wraps around to
      * first card if a the end.
      */
+
     public void moveToNextCard() {
         if (this.deck.length() > 0) {
             this.currentIndex = (this.currentIndex + 1) % this.deck.length();
@@ -95,6 +98,7 @@ public class FlashcardDeck {
      * Moves the current position to the previous card in this deck, wraps
      * around to the last card if at the beginning.
      */
+
     public void moveToPreviousCard() {
         if (this.deck.length() > 0) {
             this.currentIndex = (this.currentIndex - 1 + this.deck.length())
@@ -114,6 +118,7 @@ public class FlashcardDeck {
      *
      * @return the front text of the current card
      */
+
     public String currentFront() {
         return this.deck.entry(this.currentIndex).front;
     }
@@ -123,6 +128,7 @@ public class FlashcardDeck {
      *
      * @return the back text of the current card
      */
+
     public String currentBack() {
         return this.deck.entry(this.currentIndex).back;
     }
@@ -142,6 +148,7 @@ public class FlashcardDeck {
      *
      * @return this.deck.length();
      */
+
     public int size() {
         return this.deck.length();
     }
