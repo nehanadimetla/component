@@ -1,3 +1,5 @@
+package components.flashcarddeck;
+
 import components.standard.Standard;
 
 /**
@@ -84,6 +86,7 @@ public interface FlashcardDeckKernel extends Standard<FlashcardDeck> {
      *
      * @return a new empty FlashcardDeckEnhanced
      */
+    @Override
     FlashcardDeck newInstance();
 
     /**
@@ -91,6 +94,7 @@ public interface FlashcardDeckKernel extends Standard<FlashcardDeck> {
      *
      * @clears this
      */
+    @Override
     void clear();
 
     /**
@@ -101,5 +105,6 @@ public interface FlashcardDeckKernel extends Standard<FlashcardDeck> {
      * @updates this
      * @clears source
      */
+    @Override
     void transferFrom(FlashcardDeck source);
 }

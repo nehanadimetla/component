@@ -50,8 +50,6 @@ course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I believe this portfolio project made me understand software development a lot better. In general, I feel like concepts in the class are well taught but sometimes application can be tricky, especially something as wide scale as this project. I liked the process of this project because we kept getting feedback, and I feel like that helped my learning the most because I personally learn really well from mistakes I make.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Yes, I did find weaknesses in my knowledge from this project. Because this project involved us building a component from scratch, I really had to understand every aspect of software 2 to get this project to work. I realized I didn't have the strongest basis of kernel and secondary methods and how they bridge together through the implementation of an abstract class. I addressed these gaps by going back to the slides or labs and looking at how it was properly supposed to be done. They had a lot of good example of how kernel and secondary methods are connected and implemented. I also feel like this project helped me understand the structure of code as well, such as classes, test cases, etc.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Software is something I still enjoy, this was just a very different side to software I haven't really experienced. I haven't dealt with kernel and secondary methods the way I've learned to work with them in software 2. In software 1 the focus was more on how to built off kernel and secondary methods rather than how the components were implemented. So this projected really showed me a more in depth side of how software works and I definitely enjoyed it.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +322,28 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Some skills I picked up through this process include troubleshooting skills and honestly perserverence. A lot of times, I had issues with my files building off eachother (specifically connecting secondary to kernel and kernel to standard). This gave me a bunch of errors and a lot of scary red symbols. It was definitley unmotivating to look at that and keep trying to fix what was wrong but this experience allowed me to get a glimpses of what it may be like in the real world. I learned to debug a lot better through using breakpoints and debugging that way.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Debugged complex Java class hierarchy errors using VSC breakpoints and compiler output analysis
+- Demonstrated persistance and problem-solving when resolving multi-file dependency issues in a layered software component
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I actually really like my FlashcardDeck component. I feel like this is a study turn I regularly used in highschool so it was fun to make something I use so much. I also really like this side of software because I can be creative with how I choose to implement my secondary methods since they are so many abstract implementations I could utilize. In the future, I plan to stay in computer science and continue to aspire for a software involved career.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+Some things I could do to continue my career trajectory include working on more personal projects like this. I feel like it'll help me gain a lot of exposure in the field and will help build my resume to set me up for success when I am trying to secure a job. Some mentors who I could contact to help me stay on my path include my parents, and obviously my CSE professors. My parents are both in the computer science industry, so they motivate me and help me understand concepts when I struggle. I actually owe it to them for my interest in computer science since they started to introduce it to me at the age of 6. My CSE professors are also a great resource to reach out to when I'm struggling or just need a little guidance. They've gone through the process of recieving a CSE education, so I feel like they'd be very helpful if I had questions or concerns.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -383,8 +378,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -435,7 +428,5 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
