@@ -2,7 +2,7 @@
  * Layered implementation of the FlashcardDeck component.
  */
 
-public abstract class FlashcardDeckSecondary implements FlashcardDeckEnhanced {
+public abstract class FlashcardDeckSecondary implements FlashcardDeck {
 
     @Override
     public final String toString() {
@@ -33,10 +33,10 @@ public abstract class FlashcardDeckSecondary implements FlashcardDeckEnhanced {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof FlashcardDeckEnhanced)) {
+        if (!(obj instanceof FlashcardDeck)) {
             return false;
         }
-        FlashcardDeckEnhanced other = (FlashcardDeckEnhanced) obj;
+        FlashcardDeck other = (FlashcardDeck) obj;
         int n = this.size();
         if (n != other.size()) {
             return false;
