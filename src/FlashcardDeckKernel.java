@@ -1,7 +1,9 @@
+import components.standard.Standard;
+
 /**
  * Kernel interface for a flashcard deck component.
  */
-public interface FlashcardDeckKernel {
+public interface FlashcardDeckKernel extends Standard<FlashcardDeck> {
 
     /**
      * Adds a card with the given front and back to the end of this deck.
@@ -82,7 +84,7 @@ public interface FlashcardDeckKernel {
      *
      * @return a new empty FlashcardDeckEnhanced
      */
-    FlashcardDeckEnhanced newInstance();
+    FlashcardDeck newInstance();
 
     /**
      * Resets this component to an empty state.
@@ -99,5 +101,5 @@ public interface FlashcardDeckKernel {
      * @updates this
      * @clears source
      */
-    void transferFrom(FlashcardDeckEnhanced source);
+    void transferFrom(FlashcardDeck source);
 }

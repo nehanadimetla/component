@@ -160,12 +160,12 @@ public class FlashcardDeck1L extends FlashcardDeckSecondary {
     }
 
     @Override
-    public FlashcardDeckEnhanced newInstance() {
+    public FlashcardDeck newInstance() {
         return new FlashcardDeck1L();
     }
 
     @Override
-    public void transferFrom(FlashcardDeckEnhanced source) {
+    public void transferFrom(FlashcardDeck source) {
         assert source instanceof FlashcardDeck1L : "Violation of: source is of dynamic type FlashcardDeck1L";
 
         FlashcardDeck1L localSource = (FlashcardDeck1L) source;
