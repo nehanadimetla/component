@@ -1,3 +1,5 @@
+package components.flashcarddeck;
+
 /**
  * Enhanced interface for a flashcard deck component.
  */

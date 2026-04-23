@@ -1,3 +1,5 @@
+package components.flashcarddeck;
+
 import components.sequence.Sequence;
 import components.sequence.Sequence1L;
 

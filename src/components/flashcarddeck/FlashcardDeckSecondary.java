@@ -1,3 +1,5 @@
+package components.flashcarddeck;
+
 /**
  * Layered implementation of the FlashcardDeck component.
  */
